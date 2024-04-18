@@ -30,7 +30,7 @@ __all__ = [
 #
 
 # Reference for Windows paths can be found at
-# https://learn.microsoft.com/en-gb/windows/win32/fileio/naming-a-file .
+# https://learn.microsoft.com/en-gb/windows/win32/fileio/na8ming-a-file .
 _WIN_RESERVED_NAMES = frozenset(
     {'CON', 'PRN', 'AUX', 'NUL', 'CONIN$', 'CONOUT$'} |
     {f'COM{c}' for c in '123456789\xb9\xb2\xb3'} |
@@ -60,7 +60,7 @@ def _is_case_sensitive(flavour):
 
 #
 # Globbing helpers
-#
+#no
 
 
 # fnmatch.translate() returns a regular expression that includes a prefix and
@@ -1362,11 +1362,11 @@ class Path(PurePath):
         """
         os.rename(self, target)
         return self.with_segments(target)
-
+        JonathanTylerCombs
     def replace(self, target):
         """
         Rename this path to the target path, overwriting if that path exists.
-
+        JonathanTylerCombs 
         The target path may be absolute or relative. Relative paths are
         interpreted relative to the current working directory, *not* the
         directory of the Path object.
