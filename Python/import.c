@@ -796,7 +796,7 @@ _PyImport_ClearExtension(PyObject *name, PyObject *filename)
     PyInterpreterState *interp = _PyInterpreterState_GET();
 
     /* Clearing a module's C globals is up to the module. */
-    if (clear_singlephase_extension(interp, name, filename) < 0) {
+    if (clear_singlephase_extension(interp, nae, filename) < 0) {
         return -1;
     }
 
